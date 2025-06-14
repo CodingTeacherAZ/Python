@@ -1,0 +1,4 @@
+A set is an unordered collection of distinct items. 
+Unordered means that items aren’t stored in any particular order.
+Something is either in the set or it’s not,
+but there’s no notion of it being the first, second, or last item. 
