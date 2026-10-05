@@ -4,6 +4,9 @@ built-in modules
 • io, os, os.path, sys (importing modules, using modules to open, read, and  
 check existence of files, command-line arguments)  
 '''
+
+
+
 '''
 # in the shell: 
 >>> import os
@@ -14,7 +17,7 @@ In the shell:
 >>>> os.chdir('/Users/pallaskennedy/Documents')
 >>>> os.getcwd()
 '/Users/pallaskennedy/Documents'
-
+'''
 
 #####    Basic File System Operations:    #####
 
@@ -27,12 +30,12 @@ In the shell:
 # The os module provides a way to interact with the operating system.
 # Common operations include:
 
-os.getcwd(): Get the current working directory.
-os.listdir(path): Get a list of files and directories in the specified path.
-os.mkdir(path): Create a new directory.
-os.remove(path): Remove a file.
-os.rmdir(path): Remove an empty directory.
-os.path.exists(path): Check if a file or directory exists.
+# os.getcwd():                Get the current working directory.
+# os.listdir(path):           Get a list of files and directories in the specified path.
+# os.mkdir(path):             Create a new directory.
+# os.remove(path):            Remove a file.
+# os.rmdir(path):             Remove an empty directory.
+# os.path.exists(path):       Check if a file or directory exists.
 
 # Example
 import os
@@ -40,21 +43,21 @@ current_directory = os.getcwd()
 files_in_directory = os.listdir(current_directory)
 
 
-## os.path Module:
-The os.path module provides common operations on file paths:
+# ## os.path Module:
+# The os.path module provides common operations on file paths:
 
-os.path.join(path, *paths): Join one or more path components.
-os.path.abspath(path): Return the absolute version of a path.
-os.path.basename(path): Return the base name of a path.
-os.path.dirname(path): Return the directory name of a path.
+# os.path.join(path, *paths):     Join one or more path components.
+# os.path.abspath(path):          Return the absolute version of a path.
+# os.path.basename(path):         Return the base name of a path.
+# os.path.dirname(path):          Return the directory name of a path.
 
 
 ##  sys Module
 # The sys module provides access to some variables used or maintained
 # by the Python interpreter and functions that interact with the interpreter:
 
-sys.argv     List of command-line arguments passed to the script.
-sys.exit()    Exit the Python interpreter.
+sys.argv        #List of command-line arguments passed to the script.
+sys.exit()      #Exit the Python interpreter.
 
 
 ####    File Operations:    #####
@@ -67,16 +70,16 @@ sys.exit()    Exit the Python interpreter.
 with open('example.txt', 'r') as file:
     content = file.read()
 
-## Writing to Files:
-Use 'w' mode to open a file for writing. This will create a new file or
-overwrite an existing one.
+# ## Writing to Files:
+# Use 'w' mode to open a file for writing. This will create a new file or
+# overwrite an existing one.
 
 # Example:
 with open('output.txt', 'w') as file:
     file.write('Hello, World!')
     
-## Command-Line Arguments:
-Access command-line arguments using sys.argv.
+# ## Command-Line Arguments:
+# Access command-line arguments using sys.argv.
 
 #Example:
 
